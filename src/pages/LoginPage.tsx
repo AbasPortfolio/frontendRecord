@@ -21,7 +21,7 @@ function LoginPage() {
             event.stopPropagation();
         } else {
             try {
-                const response = await axios.post('http://localhost:5050/record/login', {
+                const response = await axios.post('https://backendrecords.onrender.com/record/login', {
                     email: sanitizeInput(email),
                     password: sanitizeInput(password),
                 }, {
