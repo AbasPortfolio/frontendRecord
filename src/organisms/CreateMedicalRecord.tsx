@@ -43,7 +43,7 @@ function CreateMedicalRecord() {
             event.stopPropagation();
         } else {
             try {
-                const response = await axios.post('http://localhost:5050/record/user/create', {
+                const response = await axios.post('https://backendrecords.onrender.com/record/user/create', {
                     patient_name: name,
                     patient_age: parseInt(age),
                     patient_gender: gender === GenderType.Male,
