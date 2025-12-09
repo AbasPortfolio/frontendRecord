@@ -49,7 +49,7 @@ function CreateAppointment() {
             event.stopPropagation();
         } else {
             try {
-                const response = await axios.post('http://localhost:5050/record/appointments/create', {
+                const response = await axios.post('https://backendrecords.onrender.com/record/appointments/create', {
                     patient: patientName,
                     appointmentDate: date,
                     appointmentTime: time,
